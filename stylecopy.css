@@ -12,7 +12,6 @@ body{
 nav{
     display: flex;
     flex-direction: row;
-    min-width: 525px;
     height: 75px;
     border-bottom: 5px solid blue;
     padding-top: 5px;
@@ -27,7 +26,7 @@ nav{
 nav ul{
     display: flex;
     flex-direction: row;
-    padding: 0px;
+    padding: 0;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -38,7 +37,7 @@ nav li{
     flex-direction: row;
     list-style: none;
     flex-grow: 1;
-    padding: 0px;
+    padding: 0;
     background-image: url(richB2.png) ;
     background-repeat: repeat-x;
     background-position: center;
@@ -49,69 +48,31 @@ nav li{
 nav li.head {
     background: none;
     flex-grow: 0;
-
 }
 
-nav a:link{
-    display: table-cell;
+/* states inherit from this base instead of cloning the style */
+nav a:link {
+	line-height: 56px;
     list-style: none;
-    border: 0px;
+    border: 0;
     text-decoration: none;
-    text-align: center;
-    vertical-align: middle;
+    
     color: black;
     height: 56px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 0px;
-    font-size: 110%
-
+    margin: 0;
+    font-size: 1.3vw
 }
 
-nav a:visited{
-    display: table-cell;
-    list-style: none;
-    border: 0px;
-    text-decoration: none;
-    text-align: center;
-    vertical-align: middle;
-    color: black;
-    height: 56px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 0px;
-    font-size: 1.1em
-
+@media screen and (max-width: 780px) {
+  nav a:link {
+     font-size: 10px;
+  }
 }
 
 nav a:hover{
-    display: table-cell;
-    list-style: none;
-    border: 0px;
-    text-decoration: none;
-    text-align: center;
-    vertical-align: middle;
     color: rgb(255, 255, 255);
-    height: 56px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 0px;
-    font-size: 1.1em
-
 }
 
 nav a:active{
-    display: table-cell;
-    list-style: none;
-    border: 0px;
-    text-decoration: none;
-    text-align: center;
-    vertical-align: middle;
     color: Green;
-    height: 56px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 0px;
-    font-size: 1.1em
-
 }
