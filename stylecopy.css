@@ -51,7 +51,7 @@ nav li.head {
 }
 
 /* states inherit from this base instead of cloning the style */
-nav a:link {
+nav a {
 	line-height: 56px;
     list-style: none;
     border: 0;
@@ -64,7 +64,7 @@ nav a:link {
 }
 
 @media screen and (max-width: 780px) {
-  nav a:link {
+  nav a {
      font-size: 10px;
   }
 }
