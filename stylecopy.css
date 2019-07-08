@@ -39,7 +39,7 @@ nav li{
     list-style: none;
     flex-grow: 1;
     padding: 0px;
-    background-image: url(../img/richB2.png) ;
+    background-image: url(richB2.png) ;
     background-repeat: repeat-x;
     background-position: center;
     height: 56px;
